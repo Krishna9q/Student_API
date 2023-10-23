@@ -34,6 +34,12 @@ public class controller {
         return this.studentService.getStudent(Long.parseLong(studentId));
     }
 
+    // Getting Student By Name
+    @GetMapping("/students/name")    
+    public List<String> getStudentsName(){
+        return this.studentService.getStudentsName();
+    }
+
     //Adding a Student
     @PostMapping("/students")
     public Student addStudent( @RequestBody Student student){

@@ -16,5 +16,8 @@ public interface StudentService {
     public Student updateStudent(Student student,Long studentId);
 
     public Student getStudent(Long studentId);
+
+    //custome query
+    public List<String> getStudentsName();
     
 }

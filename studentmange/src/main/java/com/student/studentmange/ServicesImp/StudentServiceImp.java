@@ -41,5 +41,10 @@ public class StudentServiceImp implements StudentService {
 
         return this.studentDao.findById(studentId).orElse(null);
     }
+    @Override
+    public List<String> getStudentsName() {
+       
+        return this.studentDao.getStudentsName();
+    }
     
 }
