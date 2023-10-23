@@ -68,4 +68,13 @@ public class controller {
         System.out.println("studentbySubject ................");
         return this.studentService.getStudentBySubject(Subject);
     }
+
+    // Search a Student
+    @GetMapping("/students/Name/{name}")
+    public List<Student> searchStudent(@PathVariable("name") String name) {
+        return this.studentService.findStudentByNameContainingIgnoreCase(name);
+
+}
+
+
 }

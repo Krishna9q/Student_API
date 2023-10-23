@@ -50,5 +50,13 @@ public class StudentServiceImp implements StudentService {
     public List<String> getStudentBySubject(String subname) {
         return this.studentDao.getStudentBySubject(subname);
     }
-    
+    @Override
+    public List<Student> findStudentByNameContainingIgnoreCase(String name) {
+        
+        return this.studentDao.findStudentByNameContainingIgnoreCase( name);
+    }
+
+
 }
+    
+
