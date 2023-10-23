@@ -25,39 +25,47 @@ public class controller {
     //Getting All Student
     @GetMapping("/students")
     public List<Student> getStudents(){
-
+    System.out.println("getAll........................students");
         return this.studentService.getStudents();
     }
+
     //Getting Single Student
     @GetMapping("/students/{studentId}")
     public Student getStudent(@PathVariable String studentId){
-        return this.studentService.getStudent(Long.parseLong(studentId));
+    return this.studentService.getStudent(Long.parseLong(studentId));
     }
 
+    
     // Getting Student By Name
-    @GetMapping("/students/name")    
+    @GetMapping("/students/Name")    
     public List<String> getStudentsName(){
-        return this.studentService.getStudentsName();
+    return this.studentService.getStudentsName();
     }
-
+    
     //Adding a Student
     @PostMapping("/students")
     public Student addStudent( @RequestBody Student student){
-
+        
         return this.studentService.addStudent(student);
-
+        
     }
     //Updating a student
     @PutMapping("/students/{studentId}")
     public Student updateStudent(@RequestBody Student student ,@PathVariable Long studentId){
-
+        
         return this.studentService.updateStudent(student ,studentId);
     }
-
+    
     //Deleting all Student
     @DeleteMapping("/students")
     public String DeleteAllStudent(){
         
         return this.studentService.DeleteAllStudent(); 
+    }
+    // getting Students by Subject
+    @GetMapping("/students/subject/{Subject}")
+    public List<String>  getStudentBySubject(@PathVariable("Subject") String Subject){
+        System.out.println("studentbySubject ................");
+        return this.studentService.getStudentBySubject(Subject);
     }
 }

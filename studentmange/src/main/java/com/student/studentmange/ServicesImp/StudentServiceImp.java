@@ -46,5 +46,9 @@ public class StudentServiceImp implements StudentService {
        
         return this.studentDao.getStudentsName();
     }
+    @Override
+    public List<String> getStudentBySubject(String subname) {
+        return this.studentDao.getStudentBySubject(subname);
+    }
     
 }
