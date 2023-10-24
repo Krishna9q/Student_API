@@ -14,7 +14,8 @@ public interface StudentDao extends JpaRepository<Student,Long> {
 
     @Query("select s.name from Student s where s.Subject =:subject")
      List<String> getStudentBySubject(@Param("subject")String Subject);
-    //s from Student as s where s.Subject=:subject
+    // s from Student as s where s.Subject=:subject
+
 
     @Query("Select s from Student s where s.name LIKE %:name%")
     List<Student>findStudentByNameContainingIgnoreCase(@Param("name")String name);
