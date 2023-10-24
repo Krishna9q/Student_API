@@ -3,6 +3,7 @@ package com.student.studentmange.Controller;
 
 import java.util.List;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +26,15 @@ public class controller {
     @Autowired
     private StudentService studentService;
 
+    
+
+    
+
+
     //Getting All Student
     @GetMapping("/students")
     public List<Student> getStudents(){
-         log.info("Debuging");
+         log.info("Getting All Students Data");
     // System.out.println("getAll........................students");
         return this.studentService.getStudents();
     }
