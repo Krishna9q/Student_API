@@ -3,6 +3,8 @@ package com.student.studentmange.Controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +20,7 @@ import com.student.studentmange.Sevices.StudentService;
 
 @RestController
 public class controller {
+    Logger log = LogManager.getLogger(controller.class);
     
     @Autowired
     private StudentService studentService;
@@ -25,7 +28,8 @@ public class controller {
     //Getting All Student
     @GetMapping("/students")
     public List<Student> getStudents(){
-    System.out.println("getAll........................students");
+         log.info("Debuging");
+    // System.out.println("getAll........................students");
         return this.studentService.getStudents();
     }
 
