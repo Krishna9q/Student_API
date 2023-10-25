@@ -2422,3 +2422,806 @@ Caused by: java.lang.IllegalArgumentException: Cannot pass a null GrantedAuthori
 2023-10-25 13:48:51 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2023-10-25 13:48:51 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Student(Id=402, name=Shailendra Rajput, age=19, Subject=BBA, mob=8223903094), Student(Id=403, name= (truncated)...]
 2023-10-25 13:48:51 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:04:41 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 25376 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:04:41 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:04:41 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:04:41 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:04:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:04:42 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:04:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:04:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:04:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:04:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:04:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2064 ms
+2023-10-25 17:04:43 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:04:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:04:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:04:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32238a1e
+2023-10-25 17:04:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:04:44 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:04:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:04:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:04:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:04:45 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'manager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-10-25 17:04:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:04:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:04:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:04:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:04:45 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:04:45 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field manager in com.student.studentmange.Controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2023-10-25 17:05:11 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 22760 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:05:11 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:05:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:05:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:05:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:05:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:05:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:05:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:05:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:05:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:05:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1680 ms
+2023-10-25 17:05:13 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:05:13 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:05:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:05:14 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32238a1e
+2023-10-25 17:05:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:05:14 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:05:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:05:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:05:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:05:15 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'manager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-10-25 17:05:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:05:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:05:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:05:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:05:15 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:05:15 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field manager in com.student.studentmange.Controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2023-10-25 17:05:47 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 15204 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:05:47 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:05:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:05:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:05:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:05:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:05:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:05:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:05:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:05:49 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:05:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1639 ms
+2023-10-25 17:05:49 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:05:49 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:05:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:05:50 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19a8e371
+2023-10-25 17:05:50 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:05:50 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:05:50 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:05:51 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:05:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:05:51 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'manager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-10-25 17:05:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:05:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:05:51 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:05:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:05:51 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:05:51 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field manager in com.student.studentmange.Controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2023-10-25 17:07:03 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 15384 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:07:03 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:07:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:07:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:07:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:07:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:07:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:07:05 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:07:05 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:07:05 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:07:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1722 ms
+2023-10-25 17:07:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:07:06 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:07:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:07:06 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6463e838
+2023-10-25 17:07:06 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:07:06 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:07:06 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:07:12 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 21428 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:07:12 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:07:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:07:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:07:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:07:12 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:07:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:07:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:07:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:07:13 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:07:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1709 ms
+2023-10-25 17:07:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:07:14 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:07:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:07:14 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19a8e371
+2023-10-25 17:07:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:07:14 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:07:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:07:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:07:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:07:15 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'manager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-10-25 17:07:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:07:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:07:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:07:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:07:15 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:07:15 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field manager in com.student.studentmange.Controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2023-10-25 17:14:13 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 22552 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:14:13 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:14:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:14:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:14:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:14:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:14:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:14:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:14:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:14:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:14:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1946 ms
+2023-10-25 17:14:15 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:14:16 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:14:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:14:16 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@320e7346
+2023-10-25 17:14:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:14:16 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:14:16 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:14:17 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:14:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:14:17 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController': Unsatisfied dependency expressed through field 'manager': No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-10-25 17:14:17 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:14:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:14:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:14:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:14:17 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:14:17 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field manager in com.student.studentmange.Controller.AuthController required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2023-10-25 17:17:07 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 6380 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:17:07 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:17:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:17:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:17:07 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userDetailsService' defined in class path resource [com/student/studentmange/Config/configClass1.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=configClass1; factoryMethodName=userDetailsService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/student/studentmange/Config/configClass1.class]] for bean 'userDetailsService' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=userDetailsService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/student/studentmange/Config/appConfig.class]] bound.
+2023-10-25 17:17:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:17:07 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userDetailsService', defined in class path resource [com/student/studentmange/Config/configClass1.class], could not be registered. A bean with that name has already been defined in class path resource [com/student/studentmange/Config/appConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-10-25 17:19:58 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 5332 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:19:58 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:19:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:19:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:19:58 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userDetailsService' defined in class path resource [com/student/studentmange/Config/configClass1.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=configClass1; factoryMethodName=userDetailsService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/student/studentmange/Config/configClass1.class]] for bean 'userDetailsService' since there is already [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=appConfig; factoryMethodName=userDetailsService; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/student/studentmange/Config/appConfig.class]] bound.
+2023-10-25 17:19:58 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:19:58 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'userDetailsService', defined in class path resource [com/student/studentmange/Config/configClass1.class], could not be registered. A bean with that name has already been defined in class path resource [com/student/studentmange/Config/appConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-10-25 17:23:02 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 16836 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:23:02 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:23:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:23:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:23:02 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'delegatingApplicationListener' defined in class path resource [com/student/studentmange/Config/appConfig.class]: Cannot register bean definition [Root bean: class [com.student.studentmange.Config.appConfig]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=delegatingApplicationListener; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/student/studentmange/Config/appConfig.class]] for bean 'delegatingApplicationListener' since there is already [Root bean: class [org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=delegatingApplicationListener; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]] bound.
+2023-10-25 17:23:02 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-25 17:23:02 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'delegatingApplicationListener', defined in class path resource [com/student/studentmange/Config/appConfig.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2023-10-25 17:26:15 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 2328 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:26:15 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:26:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:26:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:26:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:26:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:26:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:26:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:26:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:26:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:26:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1523 ms
+2023-10-25 17:26:17 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:26:17 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:26:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:26:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f6c4157
+2023-10-25 17:26:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:26:17 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:26:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:26:18 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:26:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:26:19 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:26:19 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4c0ab18d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e580343, org.springframework.security.web.context.SecurityContextHolderFilter@5ae982e7, org.springframework.security.web.header.HeaderWriterFilter@1246e1e8, org.springframework.security.web.csrf.CsrfFilter@317e5cf6, org.springframework.security.web.authentication.logout.LogoutFilter@1088e436, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e42fbab, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@fd40ea5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@55af1d8f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@789d5bb4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4df9f403, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b637ed2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2f98b040, org.springframework.security.web.access.ExceptionTranslationFilter@51624c34, org.springframework.security.web.access.intercept.AuthorizationFilter@73d0f4b9]
+2023-10-25 17:26:19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:26:19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:26:19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:26:19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:26:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:26:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:26:19 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 4.854 seconds (process running for 5.27)
+2023-10-25 17:27:14 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 17:27:14 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bec2f42
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@14f2f016
+2023-10-25 17:27:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 17:27:14 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-10-25 17:34:31 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 17:34:31 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:34:31 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 17:34:31 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:31 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:34:31 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:34:31 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 2328 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:34:31 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:34:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:34:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:34:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 432 ms
+2023-10-25 17:34:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:34:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 17:34:32 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b3c2d5a
+2023-10-25 17:34:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 17:34:32 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:34:32 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:34:32 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:32 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56220b5b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@785d8c83, org.springframework.security.web.context.SecurityContextHolderFilter@67e4b92, org.springframework.security.web.header.HeaderWriterFilter@12efc67a, org.springframework.security.web.csrf.CsrfFilter@328fe8a7, org.springframework.security.web.authentication.logout.LogoutFilter@5efdb010, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d501a06, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2bda26e8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@755039a4, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3e1e568c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4bf9512a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@476af469, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3936abb4, org.springframework.security.web.access.ExceptionTranslationFilter@1243cb8f, org.springframework.security.web.access.intercept.AuthorizationFilter@34335c40]
+2023-10-25 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:34:32 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:34:32 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 1.121 seconds (process running for 498.376)
+2023-10-25 17:34:32 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 17:34:36 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 17:34:36 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:34:36 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:36 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-25 17:34:36 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-25 17:34:36 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 2328 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:34:36 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:34:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:34:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:34:37 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:34:37 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:34:37 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 595 ms
+2023-10-25 17:34:37 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:34:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-10-25 17:34:37 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e4281d0
+2023-10-25 17:34:37 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-10-25 17:34:37 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:34:37 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:34:37 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:37 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e3f2f3f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3699efbd, org.springframework.security.web.context.SecurityContextHolderFilter@722fc589, org.springframework.security.web.header.HeaderWriterFilter@e4fea5b, org.springframework.security.web.csrf.CsrfFilter@2915024d, org.springframework.security.web.authentication.logout.LogoutFilter@280ec3cd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5fa3e550, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1a21ac5d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@76d0055b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ed45c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7329a6eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6bcd9e4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1df88d16, org.springframework.security.web.access.ExceptionTranslationFilter@58680289, org.springframework.security.web.access.intercept.AuthorizationFilter@38e21d98]
+2023-10-25 17:34:37 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:34:37 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:34:37 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:34:37 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:34:37 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 1.056 seconds (process running for 502.94)
+2023-10-25 17:34:37 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 17:34:47 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 17:34:47 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:34:47 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:47 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2023-10-25 17:34:47 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2023-10-25 17:34:47 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 2328 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:34:47 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:34:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:34:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:34:47 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
+2023-10-25 17:34:47 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:34:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2023-10-25 17:34:47 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a516201
+2023-10-25 17:34:47 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2023-10-25 17:34:47 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:34:47 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:34:47 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:34:47 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a2638b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76ab8a97, org.springframework.security.web.context.SecurityContextHolderFilter@57254517, org.springframework.security.web.header.HeaderWriterFilter@2d21cc94, org.springframework.security.web.csrf.CsrfFilter@6c6ac3b8, org.springframework.security.web.authentication.logout.LogoutFilter@557d761b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23669ffa, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@493406c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@61a542f7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1d95e823, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d683b48, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27756d7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53436a10, org.springframework.security.web.access.ExceptionTranslationFilter@56f39493, org.springframework.security.web.access.intercept.AuthorizationFilter@47617402]
+2023-10-25 17:34:47 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:34:47 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:34:47 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:34:47 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:34:47 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.849 seconds (process running for 513.354)
+2023-10-25 17:34:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 17:35:07 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 24172 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:35:07 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:35:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 17:35:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 17:35:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:35:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:35:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:35:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:35:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:35:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:35:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1606 ms
+2023-10-25 17:35:09 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:35:09 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 17:35:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 17:35:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2e82e121
+2023-10-25 17:35:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 17:35:10 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:35:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:35:11 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:35:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:35:11 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:35:12 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e580343, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55af1d8f, org.springframework.security.web.context.SecurityContextHolderFilter@7f8571f3, org.springframework.security.web.header.HeaderWriterFilter@71e874d4, org.springframework.security.web.csrf.CsrfFilter@6e5565b3, org.springframework.security.web.authentication.logout.LogoutFilter@5289822, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@525102e4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@11a2620e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2f98b040, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@173399ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b8e7190, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@332982df, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3607eae7, org.springframework.security.web.access.ExceptionTranslationFilter@2b28703b, org.springframework.security.web.access.intercept.AuthorizationFilter@3e42fbab]
+2023-10-25 17:35:12 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:35:12 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:35:12 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:35:12 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:35:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:35:12 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:35:12 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 5.153 seconds (process running for 5.697)
+2023-10-25 17:35:19 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 17:35:19 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@33843f93
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@21047f45
+2023-10-25 17:35:19 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 17:35:19 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-25 17:38:23 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 17:38:23 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 17:38:23 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 17:38:23 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:38:23 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 17:38:23 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 17:38:23 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 24172 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 17:38:23 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 17:38:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 17:38:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-10-25 17:38:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 17:38:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 17:38:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 17:38:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 17:38:23 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 395 ms
+2023-10-25 17:38:23 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 17:38:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 17:38:23 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@606a82a5
+2023-10-25 17:38:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 17:38:23 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 17:38:23 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 17:38:23 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 17:38:23 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 17:38:23 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 17:38:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 11 mappings in 'requestMappingHandlerMapping'
+2023-10-25 17:38:24 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 17:38:24 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7d64b50e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71543135, org.springframework.security.web.context.SecurityContextHolderFilter@670f48ea, org.springframework.security.web.header.HeaderWriterFilter@2e5a0ff9, org.springframework.security.web.authentication.logout.LogoutFilter@25052730, com.student.studentmange.Security.JwtAuthenticationFilter@5b798368, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55059615, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@460b9a37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60c9d3d4, org.springframework.security.web.access.ExceptionTranslationFilter@1d81d399, org.springframework.security.web.access.intercept.AuthorizationFilter@46095b37]
+2023-10-25 17:38:24 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 17:38:24 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 17:38:24 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 17:38:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 17:38:24 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.898 seconds (process running for 197.316)
+2023-10-25 17:38:24 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' securityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-10-25 17:39:41 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 17:39:41 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@297df24e
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@237ead7e
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 17:39:41 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-25 17:39:41 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Basic Og==
+2023-10-25 17:39:41 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:39:41 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:40:14 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:40:14 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=1234)]
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.student.studentmange.Controller.AuthController#exceptionHandler()
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Credentials Invalid !!"]
+2023-10-25 17:40:14 [http-nio-9090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException:  Invalid Username or Password  !!]
+2023-10-25 17:40:14 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:43:18 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:43:18 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=1234)]
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.student.studentmange.Controller.AuthController#exceptionHandler()
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Credentials Invalid !!"]
+2023-10-25 17:43:18 [http-nio-9090-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException:  Invalid Username or Password  !!]
+2023-10-25 17:43:18 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:46:34 [http-nio-9090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:46:34 [http-nio-9090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MTk0LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:46:34 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:47:17 [http-nio-9090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Basic Og==
+2023-10-25 17:47:17 [http-nio-9090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:47:17 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:17 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:17 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:47:17 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:47:18 [http-nio-9090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Basic Og==
+2023-10-25 17:47:18 [http-nio-9090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:47:18 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:18 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:18 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:47:18 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:47:31 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Basic Og==
+2023-10-25 17:47:31 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:47:31 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:31 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:47:31 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:47:31 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:48:22 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:48:22 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishnas, password=krishna)]
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Using @ExceptionHandler com.student.studentmange.Controller.AuthController#exceptionHandler()
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing ["Credentials Invalid !!"]
+2023-10-25 17:48:22 [http-nio-9090-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.security.authentication.BadCredentialsException:  Invalid Username or Password  !!]
+2023-10-25 17:48:22 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:48:28 [http-nio-9090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:48:28 [http-nio-9090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzA4LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:48:28 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:48:29 [http-nio-9090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:48:29 [http-nio-9090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzA5LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:48:29 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:48:30 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:48:30 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzEwLCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:48:30 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:48:31 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:48:31 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:48:31 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:52:46 [http-nio-9090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg",
+2023-10-25 17:52:46 [http-nio-9090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:52:46 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:52:46 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:52:46 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:52:46 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:52:48 [http-nio-9090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg",
+2023-10-25 17:52:48 [http-nio-9090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:52:48 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:52:48 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:52:48 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:52:48 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:00 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg",
+2023-10-25 17:53:00 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:53:00 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:00 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:00 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:00 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:19 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg
+2023-10-25 17:53:19 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:53:19 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:19 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:19 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:19 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:20 [http-nio-9090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg
+2023-10-25 17:53:20 [http-nio-9090-exec-4] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:53:20 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:20 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:53:20 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:53:20 [http-nio-9090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:54:41 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg
+2023-10-25 17:54:41 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:54:41 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:54:41 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:54:41 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:54:41 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:54:50 [http-nio-9090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Beare eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg
+2023-10-25 17:54:50 [http-nio-9090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:54:50 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:54:50 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:54:50 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:54:50 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:56:22 [http-nio-9090-exec-3] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenTh
+2023-10-25 17:56:22 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:56:22 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:56:22 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:56:22 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:56:29 [http-nio-9090-exec-1] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenTh
+2023-10-25 17:56:29 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:56:29 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:56:29 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:56:29 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:57:49 [http-nio-9090-exec-5] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2MzExLCJleHAiOjE2OTgyNTQzMTF9.JRRyTnJfurcvV1n4l_linDBQAGI4iL8hpsw9ImyHkuy8m2Rl9mCkN-xDMrJF_fVODDEmvkxtm7r3Aul7ZenThg
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/students", parameters={}
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:57:49 [http-nio-9090-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.student.studentmange.Entity.Student com.student.studentmange.Controller.controller.addStudent(com.student.studentmange.Entity.Student)]
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:57:49 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:58:13 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:58:13 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2ODkzLCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:58:13 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:58:15 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:58:15 [http-nio-9090-exec-6] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2ODk1LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:58:15 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:58:16 [http-nio-9090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:58:16 [http-nio-9090-exec-8] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:58:16 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:16 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:16 [http-nio-9090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:58:16 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:16 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:58:17 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:58:17 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2ODk3LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:58:17 [http-nio-9090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:58:18 [http-nio-9090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 17:58:18 [http-nio-9090-exec-10] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2ODk4LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 17:58:18 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 17:58:41 [http-nio-9090-exec-9] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM2ODk4LCJleHAiOjE2OTgyNTQ4OTh9.iTw00OP3RNgjOh2-Ucg-uortHX60sevVb-80QTppb-x5ELNOWlH3J85rTmE0PnV3ilM4GnCc_TYILl0BBl03JQ
+2023-10-25 17:58:41 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:58:41 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:58:42 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/students", parameters={}
+2023-10-25 17:58:42 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#addStudent(Student)
+2023-10-25 17:58:42 [http-nio-9090-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.student.studentmange.Entity.Student com.student.studentmange.Controller.controller.addStudent(com.student.studentmange.Entity.Student)]
+2023-10-25 17:58:42 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+2023-10-25 17:58:42 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 17:58:42 [http-nio-9090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-10-25 18:01:23 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  null
+2023-10-25 18:01:23 [http-nio-9090-exec-2] INFO  o.s.web.filter.OncePerRequestFilter - Invalid Header Value !! 
+2023-10-25 18:01:23 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 18:01:23 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 18:01:23 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2023-10-25 18:01:23 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.AuthController#login(JwtRequest)
+2023-10-25 18:01:23 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [JwtRequest(email=krishna, password=krishna)]
+2023-10-25 18:01:24 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 18:01:24 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [JwtResponce(jwToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM3MDg0LCJleHAiOjE2OTg (truncated)...]
+2023-10-25 18:01:24 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 18:03:41 [http-nio-9090-exec-7] INFO  o.s.web.filter.OncePerRequestFilter -  Header :  Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJrcmlzaG5hIiwiaWF0IjoxNjk4MjM3MDg0LCJleHAiOjE2OTgyNTUwODR9.eSTBhUnTPKQlo4Esg3t4UIbQaB1QuWUKHGfigUBSkp7idzlOXPbskd5YOv0GF_V8YayHmxxU8rJJHkxnR_BrXA
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#getStudents()
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#getStudents()
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/students", parameters={}
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.student.studentmange.Controller.controller#getStudents()
+2023-10-25 18:03:41 [http-nio-9090-exec-7] INFO  c.s.s.Controller.controller - Getting All Students Data
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Student(Id=402, name=Shailendra Rajput, age=19, Subject=BBA, mob=8223903094), Student(Id=403, name= (truncated)...]
+2023-10-25 18:03:41 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2023-10-25 18:11:27 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=2m3s122ms551µs600ns).
