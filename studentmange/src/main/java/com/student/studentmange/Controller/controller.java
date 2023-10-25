@@ -3,9 +3,9 @@ package com.student.studentmange.Controller;
 
 import java.util.List;
 
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.LoggerFactory;
+// import org.apache.logging.log4j.Logger;
+// import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,14 +19,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.student.studentmange.Entity.Student;
 import com.student.studentmange.Sevices.StudentService;
 
+import ch.qos.logback.classic.Logger;
+
 @RestController
 public class controller {
-    Logger log = LogManager.getLogger(controller.class);
-    
+   
+ org.slf4j.Logger log  = LoggerFactory.getLogger(controller.class);
+
     @Autowired
     private StudentService studentService;
-
-    
 
     
 

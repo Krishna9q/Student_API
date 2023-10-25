@@ -1,0 +1,552 @@
+2023-10-25 00:01:49.662 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-10-25 00:01:49.686 INFO  [Thread-5] o.a.c.c.StandardService - Stopping service [Tomcat]
+2023-10-25 00:01:49.687 INFO  [Thread-5] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 00:01:49.707 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:01:49.711 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 00:01:49.719 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 00:01:49.794 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 20556 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:01:49.796 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:01:50.151 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:01:50.167 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:01:50.284 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:01:50.286 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:01:50.287 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:01:50.315 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:01:50.315 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 515 ms
+2023-10-25 00:01:50.367 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:01:50.372 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 00:01:50.391 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61226400
+2023-10-25 00:01:50.392 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 00:01:50.393 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:01:50.394 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:01:50.433 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:01:50.434 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:01:50.530 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:01:50.646 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:01:50.663 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:01:50.677 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:01:50.686 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:01:50.733 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8e4e077, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a23ec29, org.springframework.security.web.context.SecurityContextHolderFilter@73174f7f, org.springframework.security.web.header.HeaderWriterFilter@1e9f5006, org.springframework.security.web.csrf.CsrfFilter@53655971, org.springframework.security.web.authentication.logout.LogoutFilter@ca50885, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6b2b7e42, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4ebe2912, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@a4a5c41, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f6ea282, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a402ebd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a45533c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@300a8538, org.springframework.security.web.access.ExceptionTranslationFilter@6ee9d990, org.springframework.security.web.access.intercept.AuthorizationFilter@33b028ba]
+2023-10-25 00:01:50.745 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:01:50.754 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:01:50.759 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.998 seconds (process running for 832.368)
+2023-10-25 00:01:50.763 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 00:02:04.343 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 00:02:04.354 INFO  [Thread-7] o.a.c.c.StandardService - Stopping service [Tomcat]
+2023-10-25 00:02:04.363 INFO  [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:02:04.364 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-25 00:02:04.371 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-25 00:02:04.433 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 20556 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:02:04.435 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:02:04.602 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:02:04.620 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:02:04.753 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:02:04.754 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:02:04.754 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:02:04.794 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:02:04.794 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 358 ms
+2023-10-25 00:02:04.845 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:02:04.851 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+2023-10-25 00:02:04.866 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a20f6a
+2023-10-25 00:02:04.867 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+2023-10-25 00:02:04.868 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:02:04.868 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:02:04.902 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:02:04.903 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:02:04.994 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:02:05.038 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:02:05.052 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:02:05.065 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:02:05.077 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:02:05.119 WARN  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 897e88f4-6833-4cae-a093-eb3a39c618c2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-25 00:02:05.130 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@651ddf8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25dbfd1b, org.springframework.security.web.context.SecurityContextHolderFilter@342a33b7, org.springframework.security.web.header.HeaderWriterFilter@61642ed0, org.springframework.security.web.csrf.CsrfFilter@65f4bd48, org.springframework.security.web.authentication.logout.LogoutFilter@6d7b160, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2bd316fe, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3197af8f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@160c7bb8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10b4fe55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74f4c687, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71c50dc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21fd797a, org.springframework.security.web.access.ExceptionTranslationFilter@4e7979a1, org.springframework.security.web.access.intercept.AuthorizationFilter@5342789a]
+2023-10-25 00:02:05.141 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:02:05.158 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:02:05.161 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.748 seconds (process running for 846.77)
+2023-10-25 00:02:05.163 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 00:02:52.721 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 5852 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:02:52.725 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:02:52.790 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 00:02:52.791 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 00:02:53.353 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:02:53.393 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:02:54.047 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:02:54.057 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:02:54.059 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:02:54.150 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:02:54.151 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1360 ms
+2023-10-25 00:02:54.349 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:02:54.412 INFO  [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 00:02:54.688 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 00:02:54.923 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79f81620
+2023-10-25 00:02:54.923 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 00:02:54.959 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:02:54.959 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:02:55.619 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:02:55.628 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:02:56.234 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:02:56.357 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:02:56.455 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:02:56.475 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:02:56.494 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:02:56.607 WARN  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 39d775e4-4d92-4cbf-bcce-9dc773fa5741
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-10-25 00:02:56.717 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@684b2f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@dc8c7e7, org.springframework.security.web.context.SecurityContextHolderFilter@7f9fc67a, org.springframework.security.web.header.HeaderWriterFilter@52639bdb, org.springframework.security.web.csrf.CsrfFilter@2045de9b, org.springframework.security.web.authentication.logout.LogoutFilter@3d5ee2fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2855269a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@27c48cc3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ca58f25, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2bd40276, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@671ae85a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52182b9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9d571cd, org.springframework.security.web.access.ExceptionTranslationFilter@417b5e7e, org.springframework.security.web.access.intercept.AuthorizationFilter@766b13a8]
+2023-10-25 00:02:56.760 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:02:56.813 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:02:56.828 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 4.467 seconds (process running for 4.853)
+2023-10-25 00:03:03.572 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 00:03:03.572 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@29f2e348
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@500e13c8
+2023-10-25 00:03:03.572 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 00:03:03.572 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 0 ms
+2023-10-25 00:04:19.925 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 22988 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:04:19.925 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:04:19.971 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 00:04:19.971 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 00:04:20.519 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:04:20.556 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:04:21.257 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:04:21.272 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:04:21.272 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:04:21.432 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:04:21.433 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+2023-10-25 00:04:21.646 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:04:21.710 INFO  [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 00:04:22.061 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 00:04:22.359 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@425858cc
+2023-10-25 00:04:22.359 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 00:04:22.376 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:04:22.376 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:04:23.103 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:04:23.119 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:04:23.675 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:04:23.809 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:04:23.909 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:04:23.927 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:04:23.946 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:04:24.161 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e12fcd0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@406a7afa, org.springframework.security.web.context.SecurityContextHolderFilter@1ca58f25, org.springframework.security.web.header.HeaderWriterFilter@a2b8e4, org.springframework.security.web.csrf.CsrfFilter@5839d743, org.springframework.security.web.authentication.logout.LogoutFilter@3924cfb5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d2c9598, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1492568d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1dc87c09, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@717bf5b5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ae5492e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7360e04f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8d8bf0, org.springframework.security.web.access.ExceptionTranslationFilter@2bd40276, org.springframework.security.web.access.intercept.AuthorizationFilter@29f98ec4]
+2023-10-25 00:04:24.209 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:04:24.261 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:04:24.275 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 4.682 seconds (process running for 5.141)
+2023-10-25 00:04:31.202 INFO  [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 00:04:31.202 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 00:04:31.202 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 00:04:31.202 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 00:04:31.202 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 00:04:31.202 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@519f54c4
+2023-10-25 00:04:31.217 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d1c80c1
+2023-10-25 00:04:31.217 DEBUG [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 00:04:31.217 INFO  [http-nio-9090-exec-2] o.s.w.s.DispatcherServlet - Completed initialization in 15 ms
+2023-10-25 00:04:39.791 WARN  [http-nio-9090-exec-1] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 00:04:47.457 WARN  [http-nio-9090-exec-6] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 00:05:25.590 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 00:05:25.604 INFO  [Thread-5] o.a.c.c.StandardService - Stopping service [Tomcat]
+2023-10-25 00:05:25.614 INFO  [Thread-5] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 00:05:25.637 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:05:25.641 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 00:05:25.652 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 00:05:25.761 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 22988 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:05:25.761 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:05:25.945 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:05:25.955 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:05:26.049 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:05:26.050 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:05:26.051 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:05:26.077 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:05:26.080 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 315 ms
+2023-10-25 00:05:26.128 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:05:26.133 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 00:05:26.149 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7a1621fb
+2023-10-25 00:05:26.152 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 00:05:26.153 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:05:26.153 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:05:26.189 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:05:26.190 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:05:26.297 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:05:26.346 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:05:26.392 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:05:26.407 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:05:26.415 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:05:26.489 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56241857, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@768ea545, org.springframework.security.web.context.SecurityContextHolderFilter@7c742e45, org.springframework.security.web.header.HeaderWriterFilter@4db01113, org.springframework.security.web.csrf.CsrfFilter@36db9bbf, org.springframework.security.web.authentication.logout.LogoutFilter@6f17032d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e3a822e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@66205c3e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4c9f6248, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39e3faaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16984417, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2bd5e8de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a8fcff6, org.springframework.security.web.access.ExceptionTranslationFilter@2a82ee54, org.springframework.security.web.access.intercept.AuthorizationFilter@f25f5fb]
+2023-10-25 00:05:26.505 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:05:26.520 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:05:26.527 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.833 seconds (process running for 67.386)
+2023-10-25 00:05:26.531 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 00:06:29.597 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 00:06:29.598 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 00:06:29.598 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 00:06:29.598 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 00:06:29.598 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 00:06:29.599 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@65b7582b
+2023-10-25 00:06:29.600 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@218cba07
+2023-10-25 00:06:29.601 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 00:06:29.602 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2023-10-25 00:06:35.208 WARN  [http-nio-9090-exec-4] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 00:09:57.689 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14276 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:09:57.693 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:09:57.755 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 00:09:57.755 INFO  [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 00:09:58.423 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:09:58.488 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:09:59.215 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:09:59.227 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:09:59.229 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:09:59.325 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:09:59.326 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1570 ms
+2023-10-25 00:09:59.645 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:09:59.732 INFO  [restartedMain] o.h.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 00:10:00.082 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 00:10:00.354 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c8b10ad
+2023-10-25 00:10:00.358 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 00:10:00.375 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:10:00.378 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:10:01.136 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:10:01.144 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:10:01.693 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:10:01.839 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:10:02.005 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:10:02.051 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:10:02.071 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:10:02.288 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79b4757b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4295e4bf, org.springframework.security.web.context.SecurityContextHolderFilter@1c0e7b2d, org.springframework.security.web.header.HeaderWriterFilter@6d806600, org.springframework.security.web.csrf.CsrfFilter@50d46eaa, org.springframework.security.web.authentication.logout.LogoutFilter@7b08b457, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6e370c7c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@418a5708, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@fc6f7d7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7639a466, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e1ff734, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29e88775, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53ab3be4, org.springframework.security.web.access.ExceptionTranslationFilter@6911b1fd, org.springframework.security.web.access.intercept.AuthorizationFilter@63ad9af9]
+2023-10-25 00:10:02.338 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:10:02.390 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:10:02.400 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 5.082 seconds (process running for 5.592)
+2023-10-25 00:10:14.421 INFO  [http-nio-9090-exec-3] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 00:10:14.422 INFO  [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 00:10:14.423 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 00:10:14.423 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 00:10:14.423 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 00:10:14.424 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@73d0f4b9
+2023-10-25 00:10:14.426 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@570879a2
+2023-10-25 00:10:14.426 DEBUG [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 00:10:14.427 INFO  [http-nio-9090-exec-3] o.s.w.s.DispatcherServlet - Completed initialization in 4 ms
+2023-10-25 00:10:42.175 WARN  [http-nio-9090-exec-6] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 00:10:51.298 WARN  [http-nio-9090-exec-9] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 00:13:06.630 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 00:13:06.639 INFO  [Thread-5] o.a.c.c.StandardService - Stopping service [Tomcat]
+2023-10-25 00:13:06.649 INFO  [Thread-5] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 00:13:06.669 INFO  [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:13:06.676 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 00:13:06.687 INFO  [Thread-5] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 00:13:06.788 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14276 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:13:06.793 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:13:07.281 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:13:07.302 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:13:07.546 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:13:07.547 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:13:07.549 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:13:07.617 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:13:07.623 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 824 ms
+2023-10-25 00:13:07.711 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:13:07.717 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 00:13:07.736 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194ab83c
+2023-10-25 00:13:07.738 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 00:13:07.739 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:13:07.739 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:13:07.792 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:13:07.793 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:13:07.916 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:13:07.985 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:13:08.005 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:13:08.017 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:13:08.029 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:13:08.114 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7704a503, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@190326f8, org.springframework.security.web.context.SecurityContextHolderFilter@6dab8713, org.springframework.security.web.header.HeaderWriterFilter@6204908f, org.springframework.security.web.csrf.CsrfFilter@6e32065e, org.springframework.security.web.authentication.logout.LogoutFilter@4f7aca4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7258cc45, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@46d57970, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2d8deb79, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6b6970de, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13556c0e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130115, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d428196, org.springframework.security.web.access.ExceptionTranslationFilter@cc3e2cb, org.springframework.security.web.access.intercept.AuthorizationFilter@3a0a9c7f]
+2023-10-25 00:13:08.131 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:13:08.149 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:13:08.155 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 1.424 seconds (process running for 191.348)
+2023-10-25 00:13:08.159 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 00:13:13.630 INFO  [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 00:13:13.637 INFO  [Thread-7] o.a.c.c.StandardService - Stopping service [Tomcat]
+2023-10-25 00:13:13.643 INFO  [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:13:13.644 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-25 00:13:13.652 INFO  [Thread-7] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-25 00:13:13.714 INFO  [restartedMain] c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14276 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 00:13:13.715 INFO  [restartedMain] c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 00:13:13.841 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 00:13:13.853 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-10-25 00:13:13.997 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 00:13:14.001 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+2023-10-25 00:13:14.002 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 00:13:14.046 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 00:13:14.047 INFO  [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 330 ms
+2023-10-25 00:13:14.103 INFO  [restartedMain] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 00:13:14.149 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+2023-10-25 00:13:14.168 INFO  [restartedMain] c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fac225f
+2023-10-25 00:13:14.168 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+2023-10-25 00:13:14.169 INFO  [restartedMain] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 00:13:14.169 WARN  [restartedMain] o.h.o.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 00:13:14.217 INFO  [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 00:13:14.217 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 00:13:14.318 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 00:13:14.351 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 00:13:14.370 DEBUG [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 00:13:14.384 DEBUG [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 00:13:14.390 DEBUG [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 00:13:14.455 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22b50f4e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c8a9d3, org.springframework.security.web.context.SecurityContextHolderFilter@5e09ef85, org.springframework.security.web.header.HeaderWriterFilter@6b0203ba, org.springframework.security.web.csrf.CsrfFilter@4ec454f8, org.springframework.security.web.authentication.logout.LogoutFilter@21c8efdd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@723ec333, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@32b113c8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@16bd502, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@146e7cae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@32060328, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49d5c69b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6607428d, org.springframework.security.web.access.ExceptionTranslationFilter@5a743b88, org.springframework.security.web.access.intercept.AuthorizationFilter@7c5b6033]
+2023-10-25 00:13:14.469 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 00:13:14.482 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 00:13:14.485 INFO  [restartedMain] c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.791 seconds (process running for 197.678)
+2023-10-25 00:13:14.487 INFO  [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 00:13:25.136 INFO  [http-nio-9090-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 00:13:25.136 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 00:13:25.137 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 00:13:25.137 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 00:13:25.137 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 00:13:25.138 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@46c5ae75
+2023-10-25 00:13:25.138 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d178518
+2023-10-25 00:13:25.138 DEBUG [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 00:13:25.138 INFO  [http-nio-9090-exec-1] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+2023-10-25 00:13:25.196 WARN  [http-nio-9090-exec-1] o.s.s.c.b.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 10:12:50 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14648 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:12:50 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:12:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 10:12:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 10:12:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:12:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 162 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:12:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:12:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:12:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:12:56 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:12:56 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5528 ms
+2023-10-25 10:12:56 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:12:57 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 10:12:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 10:12:58 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@27eda1a6
+2023-10-25 10:12:58 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 10:12:58 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:12:58 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:13:00 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:13:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:13:02 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:13:02 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:13:02 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:13:03 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:13:03 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:13:03 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39b6b5b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6839ff00, org.springframework.security.web.context.SecurityContextHolderFilter@5fe49ebf, org.springframework.security.web.header.HeaderWriterFilter@54df0524, org.springframework.security.web.csrf.CsrfFilter@8fe5b1e, org.springframework.security.web.authentication.logout.LogoutFilter@4ccc8710, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45e0a63b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5469ecf1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@617e73cc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65069b03, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15f01a37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@480f5ac8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bbbc44, org.springframework.security.web.access.ExceptionTranslationFilter@4fe39406, org.springframework.security.web.access.intercept.AuthorizationFilter@1a704ce]
+2023-10-25 10:13:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:13:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:13:04 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 14.46 seconds (process running for 16.127)
+2023-10-25 10:13:48 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 10:13:48 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7ab55c2a
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1750646d
+2023-10-25 10:13:48 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 10:13:48 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-10-25 10:14:36 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 10:14:36 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 10:14:36 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 10:14:36 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:14:36 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 10:14:36 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 10:14:36 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14648 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:14:36 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:14:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:14:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:14:36 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
+2023-10-25 10:14:36 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:14:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 10:14:36 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52c8a524
+2023-10-25 10:14:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 10:14:36 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:14:36 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:14:36 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:14:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:14:36 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:14:36 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:14:36 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:14:36 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:14:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6eff9f95, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e55bd90, org.springframework.security.web.context.SecurityContextHolderFilter@5021980a, org.springframework.security.web.header.HeaderWriterFilter@2d56c741, org.springframework.security.web.csrf.CsrfFilter@188ec273, org.springframework.security.web.authentication.logout.LogoutFilter@386b5009, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6899a011, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@48016416, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7be90763, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a904e13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ed25527, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5376cdf6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73813edb, org.springframework.security.web.access.ExceptionTranslationFilter@303bbe5d, org.springframework.security.web.access.intercept.AuthorizationFilter@1ef5ddff]
+2023-10-25 10:14:37 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:14:37 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:14:37 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.805 seconds (process running for 109.084)
+2023-10-25 10:14:37 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 10:15:26 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-25 10:15:26 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@74ab218e
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@65f9b897
+2023-10-25 10:15:26 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-10-25 10:15:26 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-10-25 10:15:48 [http-nio-9090-exec-6] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2023-10-25 10:20:18 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 10:20:18 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 10:20:18 [Thread-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-25 10:20:18 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:20:18 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-25 10:20:18 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-25 10:20:18.448 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 14648 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:20:18.448 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:20:18.665 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:20:18.677 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:20:18.816 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:20:18.816 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:20:18.816 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:20:18.911 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:20:18.918 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 470 ms
+2023-10-25 10:20:18.980 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:20:18.980 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-10-25 10:20:19.011 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@26a65908
+2023-10-25 10:20:19.011 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-10-25 10:20:19.011 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:20:19.011 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:20:19.050 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:20:19.050 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:20:19.144 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:20:19.183 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:20:19.203 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:20:19.211 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:20:19.217 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:20:19.288 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36d9f691, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1827f859, org.springframework.security.web.context.SecurityContextHolderFilter@4b88f74a, org.springframework.security.web.header.HeaderWriterFilter@5e497fdb, org.springframework.security.web.csrf.CsrfFilter@3301e125, org.springframework.security.web.authentication.logout.LogoutFilter@3bc26775, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@22642299, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@21a8b64f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1bd4712e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ab5006f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77bc2fd7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@340ab0b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3940bc43, org.springframework.security.web.access.ExceptionTranslationFilter@51d244e6, org.springframework.security.web.access.intercept.AuthorizationFilter@3e52004b]
+2023-10-25 10:20:19.311 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:20:19.338 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:20:19.344 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.927 seconds (process running for 451.411)
+2023-10-25 10:20:19.344 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 10:20:38.228 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 6848 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:20:38.228 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:20:38.300 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-25 10:20:38.300 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-25 10:20:39.229 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:20:39.326 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:20:40.150 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:20:40.164 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:20:40.164 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:20:40.273 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:20:40.273 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1973 ms
+2023-10-25 10:20:40.466 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:20:40.527 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-25 10:20:40.837 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-25 10:20:41.122 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78254c10
+2023-10-25 10:20:41.138 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-25 10:20:41.161 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:20:41.161 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:20:41.990 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:20:42.018 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:20:42.669 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:20:42.817 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:20:42.950 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:20:42.994 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:20:43.011 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:20:43.225 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76776d2f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a90d427, org.springframework.security.web.context.SecurityContextHolderFilter@7391e440, org.springframework.security.web.header.HeaderWriterFilter@6911b1fd, org.springframework.security.web.csrf.CsrfFilter@6871e6d3, org.springframework.security.web.authentication.logout.LogoutFilter@bec2f42, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55fa371c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@236c0eb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@79b4757b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d2e3caa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c0e7b2d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f6eb0d8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4295e4bf, org.springframework.security.web.access.ExceptionTranslationFilter@76bf41da, org.springframework.security.web.access.intercept.AuthorizationFilter@5cd83760]
+2023-10-25 10:20:43.295 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:20:43.345 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:20:43.362 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 5.62 seconds (process running for 6.143)
+2023-10-25 10:21:24.362 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 10:21:24.378 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 10:21:24.386 [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:21:24.395 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-25 10:21:24.411 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-25 10:21:24 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 6848 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:21:24 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:21:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:21:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:21:24 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:21:24 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:21:24 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:21:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 507 ms
+2023-10-25 10:21:25 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:21:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-10-25 10:21:25 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@187bef86
+2023-10-25 10:21:25 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-10-25 10:21:25 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:21:25 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:21:25 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:21:25 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:21:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:21:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:21:25 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:21:25 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@890933f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f750d66, org.springframework.security.web.context.SecurityContextHolderFilter@2032fd07, org.springframework.security.web.header.HeaderWriterFilter@550d6f3b, org.springframework.security.web.csrf.CsrfFilter@17cc81e5, org.springframework.security.web.authentication.logout.LogoutFilter@7e726abe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@43f51542, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ec08027, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@144158cf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ebfb018, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5302834d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@300a45aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@472d152f, org.springframework.security.web.access.ExceptionTranslationFilter@7652a720, org.springframework.security.web.access.intercept.AuthorizationFilter@167c2dd6]
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:21:25 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 1.02 seconds (process running for 48.259)
+2023-10-25 10:21:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 10:22:19 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 10:22:19 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 10:22:19 [Thread-7] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:22:19 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2023-10-25 10:22:19 [Thread-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2023-10-25 10:22:19.829 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 6848 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:22:19.829 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:22:19.982 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:22:19.999 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:22:20.099 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:22:20.107 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:22:20.107 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:22:20.146 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:22:20.146 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 308 ms
+2023-10-25 10:22:20.196 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:22:20.212 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2023-10-25 10:22:20.229 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@72d2b192
+2023-10-25 10:22:20.229 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2023-10-25 10:22:20.229 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:22:20.229 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:22:20.294 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:22:20.296 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:22:20.370 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:22:20.402 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:22:20.410 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:22:20.428 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:22:20.428 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:22:20.468 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64dbda2d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b4dbe86, org.springframework.security.web.context.SecurityContextHolderFilter@2a227c37, org.springframework.security.web.header.HeaderWriterFilter@6ccb4fa4, org.springframework.security.web.csrf.CsrfFilter@4d3cf9d6, org.springframework.security.web.authentication.logout.LogoutFilter@4f48c12f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7abc6aff, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20098ead, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2bfc482, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@73f48d3e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ad2ec, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@160945a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55752496, org.springframework.security.web.access.ExceptionTranslationFilter@30f4c236, org.springframework.security.web.access.intercept.AuthorizationFilter@7fa01921]
+2023-10-25 10:22:20.481 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:22:20.492 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:22:20.494 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.697 seconds (process running for 103.267)
+2023-10-25 10:22:20.494 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-25 10:23:29.982 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-25 10:23:30.000 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-25 10:23:30.008 [Thread-11] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:23:30.011 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2023-10-25 10:23:30.028 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2023-10-25 10:23:30 [restartedMain] INFO  c.s.s.StudentmangeApplication - Starting StudentmangeApplication using Java 17.0.8.1 with PID 6848 (D:\Student\studentmange\target\classes started by HP in D:\Student)
+2023-10-25 10:23:30 [restartedMain] INFO  c.s.s.StudentmangeApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2023-10-25 10:23:30 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-25 10:23:30 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-10-25 10:23:30 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 333 ms
+2023-10-25 10:23:30 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25 10:23:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2023-10-25 10:23:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e55d2c1
+2023-10-25 10:23:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2023-10-25 10:23:30 [restartedMain] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-25 10:23:30 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-25 10:23:30 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25 10:23:30 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25 10:23:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-10-25 10:23:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 10 mappings in 'requestMappingHandlerMapping'
+2023-10-25 10:23:30 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-10-25 10:23:30 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bd999ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@381a273c, org.springframework.security.web.context.SecurityContextHolderFilter@5d0c9416, org.springframework.security.web.header.HeaderWriterFilter@363f5bf7, org.springframework.security.web.csrf.CsrfFilter@3595184c, org.springframework.security.web.authentication.logout.LogoutFilter@6471e965, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6d659860, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@28d30c4e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@79fd0ec7, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6b46e68, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40c6a083, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@647f13d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c1ff8be, org.springframework.security.web.access.ExceptionTranslationFilter@732ae6e8, org.springframework.security.web.access.intercept.AuthorizationFilter@480d7da6]
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2023-10-25 10:23:30 [restartedMain] INFO  c.s.s.StudentmangeApplication - Started StudentmangeApplication in 0.735 seconds (process running for 173.597)
+2023-10-25 10:23:30 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
