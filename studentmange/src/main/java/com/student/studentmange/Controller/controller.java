@@ -1,6 +1,7 @@
 package com.student.studentmange.Controller;
 
 
+import java.security.Principal;
 import java.util.List;
 
 import org.slf4j.LoggerFactory;
@@ -29,7 +30,12 @@ public class controller {
     @Autowired
     private StudentService studentService;
 
-    
+    // @GetMapping("/")
+    // public String getMessage(Principal principal){
+
+        
+    //     return "Hello"+principal.getName();
+    // }
 
 
     //Getting All Student

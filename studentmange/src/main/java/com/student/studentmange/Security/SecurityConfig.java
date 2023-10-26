@@ -7,6 +7,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import static org.springframework.security.config.Customizer.withDefaults;
+
 @Configuration
 public class SecurityConfig {
 
@@ -17,6 +19,9 @@ public class SecurityConfig {
     private JwtAuthenticationFilter filter;
 
     @Bean
+    //  SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    //     return http.oauth2Login(withDefaults()).build();
+    // }
      SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
 
         http.csrf(csrf -> csrf.disable())
@@ -27,8 +32,7 @@ public class SecurityConfig {
                        // .exceptionHandling(ex ->ex.JwtAuthenticationEntryPoint(point))
                         
                         
-           
-                         
+        
         ;
         http.addFilterBefore(filter,UsernamePasswordAuthenticationFilter.class);
         return http.build();
