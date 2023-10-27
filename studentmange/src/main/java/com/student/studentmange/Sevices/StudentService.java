@@ -23,5 +23,7 @@ public interface StudentService {
     public List<String> getStudentBySubject(String subname);
 
     public List<Student> findStudentByNameContainingIgnoreCase(String name);
+
+    public String DeleteStudentById(Long studentId);
     
 }

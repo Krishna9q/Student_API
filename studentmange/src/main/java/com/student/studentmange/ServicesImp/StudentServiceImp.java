@@ -55,6 +55,12 @@ public class StudentServiceImp implements StudentService {
         
         return this.studentDao.findStudentByNameContainingIgnoreCase( name);
     }
+    @Override
+    public String DeleteStudentById(Long studentId) {
+      studentDao.deleteById(studentId);
+
+      return "Record Deleted";
+    }
 
 
 }

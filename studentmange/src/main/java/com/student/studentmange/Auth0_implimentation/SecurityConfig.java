@@ -1,4 +1,4 @@
-package com.student.studentmange.Security;
+package com.student.studentmange.Auth0_implimentation;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 @EnableWebSecurity
 @Deprecated
-public class auth2SecurityConfig {
+public class SecurityConfig {
 
     @Bean 
     public JwtDecoder jwtDecoder()

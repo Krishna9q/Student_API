@@ -1,3 +1,4 @@
+package com.student.studentmange.JwtAuthentication;
 // package com.student.studentmange.Security;
 
 // import org.springframework.context.annotation.Bean;

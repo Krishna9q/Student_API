@@ -1,3 +1,4 @@
+package com.student.studentmange.JwtAuthentication;
 // package com.student.studentmange.Security;
 
 // import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@
 
 
 // @Configuration
-// public class SecurityConfig {
+// public class JwtSecurityConfig {
 //     // @Value(value = "${spring.security.oauth2.resourceserver.jwt.audiences}")
 //     // private String audience;
 

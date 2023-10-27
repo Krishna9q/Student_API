@@ -78,6 +78,12 @@ public class controller {
     public String DeleteAllStudent(){
         
         return this.studentService.DeleteAllStudent(); 
+
+    }
+    //Delete a single students
+    @DeleteMapping("/students/{studentId}")
+    public String DeleteStudentById(@PathVariable Long studentId){
+        return this.studentService.DeleteStudentById(studentId);
     }
     // getting Students by Subject
     @GetMapping("/students/subject/{Subject}")
