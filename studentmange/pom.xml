@@ -24,6 +24,12 @@
         <artifactId>spring-boot-starter-oauth2-client</artifactId>
     </dependency>
 
+	<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-oauth2-resource-server</artifactId>
+    <version>6.0.8</version>
+</dependency>
+
 <dependency>
     <groupId>com.auth0</groupId>
     <artifactId>auth0</artifactId>
@@ -61,15 +67,6 @@
 			<scope>runtime</scope>
 		</dependency>
 		
-		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter  [Swagger]-->
-<!-- <dependency>
-    <groupId>io.springfox</groupId>
-    <artifactId>springfox-boot-starter</artifactId>
-    <version>3.0.0</version>
-</dependency> -->
-
-
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -106,16 +103,21 @@
     		<scope>runtime</scope>
  		</dependency>
 
-      	
+<dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>2.2.0</version>
+   </dependency>
 
 
-
-</dependencies>
 	
 
 
- 
 
+
+		
+</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>

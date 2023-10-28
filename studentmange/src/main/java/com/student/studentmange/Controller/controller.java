@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.student.studentmange.Entity.Student;
 import com.student.studentmange.Sevices.StudentService;
 
-import ch.qos.logback.classic.Logger;
+
 
 @RestController
 public class controller {
@@ -30,12 +30,12 @@ public class controller {
     @Autowired
     private StudentService studentService;
 
-    // @GetMapping("/")
-    // public String getMessage(Principal principal){
+    @GetMapping("/login")
+    public String getMessage(Principal principal){
 
         
-    //     return "Hello"+principal.getName();
-    // }
+        return "Hello";
+    }
 
 
     //Getting All Student
